@@ -34,7 +34,7 @@ def get_words_collision(word_1: str, word_2: str) -> Optional[Union[str, Tuple[s
 
         if word_1.endswith(chars_collision):
             word_2_without_collision_chars = word_2[word2_chars_collision_position:]
-            # recursive for similar cases: "запара" - "параллель"
+            # recursive for similar cases: "запарара" - "рараллель"
             new_collision = get_words_collision(word_1, word_2_without_collision_chars)
 
             if new_collision:
