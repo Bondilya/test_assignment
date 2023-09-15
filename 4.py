@@ -13,7 +13,7 @@ posix_n_date_ago = time.mktime(
     (datetime.date.today() - datetime.timedelta(days=n)).timetuple()
 )
 
-directory = Path(r'D:\Downloads\Telegram Desktop')
+directory = Path(r'')
 if not directory.is_dir():
     raise ValueError(f"'{directory.name}' isn't directory")
 
