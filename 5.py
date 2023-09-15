@@ -26,7 +26,7 @@
 from typing import Optional, Union, Tuple
 
 
-def get_words_collision(word_1: str, word_2: str) -> Optional[Union[str, Tuple[str, str]]]
+def get_words_collision(word_1: str, word_2: str) -> Optional[Union[str, Tuple[str, str]]]:
     word_1_last_two_chars = word_1[-2:]
     if word_1_last_two_chars in word_2 and word_1 != word_2:
         word2_chars_collision_position = word_2.find(word_1_last_two_chars) + 2
